@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKT-Od-QiM">
+                                <rect key="frame" x="16" y="84" width="568" height="21"/>
+                                <string key="text">Lorem ipsum site delor. Lorem ipsum site delor. Lorem ipsum site delor. Lorem ipsum site delor. Lorem ipsum site delor. Lorem ipsum site delor. Lorem ipsum site delor. Lorem ipsum site delor. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hao-KN-ZYF">
+                                <rect key="frame" x="161" y="185" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CYv-nx-txi"/>
+                                    <constraint firstAttribute="height" constant="50" id="Hwt-Kx-FAk"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIf-j6-4x5">
+                                <rect key="frame" x="339" y="185" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SnH-XT-r8h"/>
+                                    <constraint firstAttribute="width" constant="100" id="ZP9-I2-ESU"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEt-1d-yhv">
+                                <rect key="frame" x="161" y="315" width="278" height="154"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="jrZ-F2-saF"/>
+                                    <constraint firstAttribute="width" constant="278" id="tIl-HP-HpA"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jKT-Od-QiM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9eN-Dr-NgX"/>
+                            <constraint firstAttribute="centerX" secondItem="DEt-1d-yhv" secondAttribute="centerX" id="Gz3-fc-LTa"/>
+                            <constraint firstItem="DEt-1d-yhv" firstAttribute="top" secondItem="hao-KN-ZYF" secondAttribute="bottom" constant="80" id="J2D-Rd-gWN"/>
+                            <constraint firstItem="jKT-Od-QiM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="KaF-hM-70O"/>
+                            <constraint firstItem="jKT-Od-QiM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SR5-5o-yLh"/>
+                            <constraint firstAttribute="centerX" secondItem="DEt-1d-yhv" secondAttribute="centerX" id="cIT-lv-c53"/>
+                            <constraint firstItem="VIf-j6-4x5" firstAttribute="top" secondItem="jKT-Od-QiM" secondAttribute="bottom" constant="80" id="dP4-Xi-mFe"/>
+                            <constraint firstItem="hao-KN-ZYF" firstAttribute="centerX" secondItem="jKT-Od-QiM" secondAttribute="centerX" constant="-89" id="dlL-hy-Ess"/>
+                            <constraint firstItem="hao-KN-ZYF" firstAttribute="top" secondItem="jKT-Od-QiM" secondAttribute="bottom" constant="80" id="iRe-Gg-Y40"/>
+                            <constraint firstItem="VIf-j6-4x5" firstAttribute="centerX" secondItem="jKT-Od-QiM" secondAttribute="centerX" constant="89" id="lap-6D-0nc"/>
+                            <constraint firstItem="VIf-j6-4x5" firstAttribute="leading" secondItem="hao-KN-ZYF" secondAttribute="trailing" constant="78" id="xy3-HB-nIs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="317" y="393"/>
         </scene>
     </scenes>
 </document>
